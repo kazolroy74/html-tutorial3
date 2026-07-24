@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>output tag</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form oninput="sumresult.value=parseInt(a.value)+parseInt(b.value)+parseInt(c.value)">
+        <input type="number" name="a" value="50">+
+        <input type="range" name="b" value="0">+
+        <input type="number" name="c" value="50">
+        <br>
+        Submit Result:
+        <output name="sumresult" for="A B C"></output>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
